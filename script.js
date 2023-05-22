@@ -167,7 +167,7 @@ function convertLength() {
 function convertWeight() {
 	if (weightFromUnit.value == 'grain') {
 		if (weightToUnit.value == 'grain') {
-			weightToValue.value = 'Lol';
+			weightToValue.value = weightFromValue.value;
 		}
 		if (weightToUnit.value == 'gram') {
 			weightToValue.value = weightFromValue.value / 15.432;
@@ -349,7 +349,7 @@ function convertTemperature() {
 function convertSpeed() {
 	if (speedFromUnit.value == 'fts') {
 		if (speedToUnit.value == 'fts') {
-			speedToValue.value = 'speedFromValue.value';
+			speedToValue.value = speedFromValue.value;
 		}
 		if (speedToUnit.value == 'ms') {
 			speedToValue.value = speedFromValue.value / 3.281;
